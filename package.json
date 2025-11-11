@@ -1,0 +1,37 @@
+{
+  "name": "template-cdk",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "template-cdk": "bin/template-cdk.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf .cdk.staging cdk.out ./dist ./node_modules",
+    "fmt": "prettier . --write",
+    "fmt:check": "prettier . --check",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "vitest run",
+    "release": "npm install && npm run fmt:check && npm run lint && npm run build && npm run test",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.4.1",
+    "@eslint/js": "^9.39.1",
+    "@types/node": "24.10.0",
+    "aws-cdk": "2.1031.2",
+    "eslint": "^9.39.1",
+    "prettier": "3.6.2",
+    "test-exclude": "^7.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.6.3",
+    "typescript-eslint": "^8.46.3",
+    "vitest": "^4.0.8"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.215.0",
+    "constructs": "^10.0.0"
+  }
+}
