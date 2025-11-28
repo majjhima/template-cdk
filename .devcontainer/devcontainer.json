@@ -1,11 +1,18 @@
 {
-  "name": "Ubuntu",
-  "image": "mcr.microsoft.com/devcontainers/base:noble",
+  "name": "Docker inside Docker",
+  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
   "features": {
-    "ghcr.io/guiyomh/features/vim": {},
-    "ghcr.io/devcontainers-extra/features/tmux-apt-get": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "enableNonRootDocker": "true",
+      "moby": "true"
+    },
     "ghcr.io/devcontainers/features/aws-cli:1": {},
-    "ghcr.io/devcontainers-extra/features/aws-cdk:2": {}
+    "ghcr.io/guiyomh/features/vim:0": {},
+    "ghcr.io/devcontainers-community/npm-features/typescript:1": {},
+    "ghcr.io/goldsam/dev-container-features/aws-sam-cli:1": {},
+    "ghcr.io/devcontainers-extra/features/aws-cdk:2": {},
+    "ghcr.io/devcontainers-extra/features/tmux-apt-get:1": {}
   },
   "mounts": [
     {
