@@ -18,22 +18,23 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.4.1",
-    "@eslint/js": "^9.39.1",
-    "@types/aws-lambda": "^8.10.159",
-    "@types/node": "^24.10.1",
-    "aws-cdk": "2.1033.0",
-    "esbuild": "^0.27.0",
-    "eslint": "^9.39.1",
-    "prettier": "3.6.2",
-    "test-exclude": "^7.0.1",
+    "@eslint/compat": "^2.0.5",
+    "@eslint/js": "^10.0.1",
+    "@types/aws-lambda": "^8.10.161",
+    "@types/node": "^24.12.3",
+    "aws-cdk": "2.1120.0",
+    "esbuild": "^0.28.0",
+    "eslint": "^10.3.0",
+    "globals": "^17.6.0",
+    "prettier": "3.8.3",
+    "test-exclude": "^8.0.0",
     "ts-node": "^10.9.2",
-    "typescript": "~5.9.3",
-    "typescript-eslint": "^8.46.3",
-    "vitest": "^4.0.8"
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.59.2",
+    "vitest": "^4.1.5"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.215.0",
-    "constructs": "^10.0.0"
+    "aws-cdk-lib": "2.252.0",
+    "constructs": "^10.6.0"
   }
 }

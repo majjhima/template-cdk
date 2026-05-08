@@ -6,5 +6,8 @@ cdk.context.json
 .cdk.staging
 cdk.out/
 
+# Dev container pinning isn't needed
+.devcontainer/devcontainer-lock.json
+
 # SAM
 .aws-sam/
