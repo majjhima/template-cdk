@@ -1,0 +1,21 @@
+{
+  "domain": "example.com",
+  "originDomain": "origin.example.com",
+  "hostedZoneId": "Z1234567890ABCDEFGHIJ",
+  "certArn": "arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012",
+  "instanceType": "t4g.micro",
+  "maxPrice": 0.005,
+  "spot": true,
+  "sshKeyPairName": "my-key-pair",
+  "additionalSshPublicKeys": [],
+  "dockerImage": "nginx:alpine",
+  "dockerPorts": ["80:80"],
+  "environment": {},
+  "s3Persistence": {
+    "enabled": false,
+    "bucketName": "",
+    "dataPath": "/data"
+  },
+  "backupIntervalMinutes": 5,
+  "originSsl": false
+}
