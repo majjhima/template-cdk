@@ -45,7 +45,6 @@ export class TemplateCdkStack extends cdk.Stack {
       memorySize: 512,
       timeout: cdk.Duration.seconds(10),
       logGroup: new logs.LogGroup(this, 'UpdateDNSLogGroup', {
-        logGroupName: 'lambda/UpdateDNSLambda',
         retention: logs.RetentionDays.ONE_WEEK,
         removalPolicy: cdk.RemovalPolicy.DESTROY,
       }),

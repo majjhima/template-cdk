@@ -10,7 +10,9 @@
   "additionalSshPublicKeys": [],
   "dockerImage": "nginx:alpine",
   "dockerPorts": ["80:80"],
-  "environment": {},
+  "environment": {
+    "FOO": "BAR"
+  },
   "s3Persistence": {
     "enabled": false,
     "bucketName": "",
